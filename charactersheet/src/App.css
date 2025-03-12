@@ -1,0 +1,21 @@
+* {
+  margin: 1%;
+  width: 100%;
+}
+
+.scoreAbility {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 5%;
+  border-width: 1px;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 2% 0.1% 2% 2%;
+  }
+
+input {
+  display:inline-block;
+  max-width: 10%;
+  
+  }
