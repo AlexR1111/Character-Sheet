@@ -3,6 +3,7 @@ import Name from './component/name'
 import Aligment from './component/Aligment'
 import Race from './component/Race'
 import AbilityScore from './component/Ability Score'
+import CharacterDescript from './component/CharacterDescript'
 import './App.css'
 
 
@@ -15,6 +16,7 @@ function App() {
         <Name />
         <Aligment/>
         <Race/>
+        <CharacterDescript/>
         <AbilityScore/>
       </div>
     </>
