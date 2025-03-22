@@ -1,11 +1,16 @@
 import React from "react";
 
 function Race(){
+    const [selectedRace, setSelectedRace] = useState("");
+
+    const handleRaceChange = (event) => {
+        setSelectedRace(event.target.value);
+    };
+
     return(
         <div>
-            <label for='race'>Race</label>
-            <br />
-            <select class='race'>
+            <label htmlfor='race'>Race</label><br/>
+            <select id='race' className='race' onChange={handleRaceChange}>
                 <option value="dwarf">Dwarf</option>
                 <option value="elf">Elf</option>
                 <option value="gnome">Gnome</option>
@@ -14,6 +19,7 @@ function Race(){
                 <option value="half-Orc">Half-Orc</option>
                 <option value="human">Human</option>
             </select>
+            <p option>You selected:{selectedRace}</p>
         </div>
     )
 }

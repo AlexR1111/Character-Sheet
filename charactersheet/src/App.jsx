@@ -13,6 +13,7 @@ function App() {
     <>
       <div>
         <h1>Charactersheet 0.1</h1>
+        <h2>TEST</h2>
         <Name />
         <Aligment/>
         <Race/>
