@@ -1,4 +1,5 @@
 import React from "react";
+import vite from "vite";
 
 function Dice(){
     let GAB = 5;
@@ -44,4 +45,4 @@ function Dice(){
     console.log("Angriff im Fernkampf:", FerAngriff)
     }
 
-export default Dice:
+export default Dice;
