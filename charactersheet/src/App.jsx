@@ -12,8 +12,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Charactersheet 0.1</h1>
-        <h2>TEST</h2>
+        <h1>Charactersheet 0.2</h1>
         <Name />
         <Aligment/>
         <Race/>
