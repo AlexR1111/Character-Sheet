@@ -1,8 +1,8 @@
 import React from 'react'
-import Name from './component/name'
-import Aligment from './component/Aligment'
+import Name from './component/Name'
+import Alignment from './component/Alignment'
 import Race from './component/Race'
-import AbilityScore from './component/Ability Score'
+import AbilityScore from './component/AbilityScore'
 import CharacterDescript from './component/CharacterDescript'
 import './App.css'
 
@@ -14,7 +14,7 @@ function App() {
       <div>
         <h1>Charactersheet 0.2</h1>
         <Name />
-        <Aligment/>
+        <Alignment/>
         <Race/>
         <CharacterDescript/>
         <AbilityScore/>
