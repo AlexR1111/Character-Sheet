@@ -1,6 +1,5 @@
 import React from 'react'
-import Name from './component/Name'
-import Alignment from './component/Alignment'
+import CharacterForm from './component/CharacterForm'
 import Race from './component/Race'
 import AbilityScore from './component/AbilityScore'
 import CharacterDescript from './component/CharacterDescript'
@@ -13,8 +12,7 @@ function App() {
     <>
       <div>
         <h1>Charactersheet 0.2</h1>
-        <Name />
-        <Alignment/>
+        <CharacterForm/>
         <Race/>
         <CharacterDescript/>
         <AbilityScore/>

@@ -2,14 +2,18 @@
   margin: 1%;
   width: 90%;
 }
-.aligment{
-  max-width: 10%;
+.alignment{
+  max-width: 120px;
 }
 .race{
-  max-width: 10%;
+  max-width: 100px;
 }
 #Cname {
   max-width: 20%;
+}
+
+button {
+  width:80px;
 }
 .scoreAbility {
   display: block;

@@ -1,35 +1,56 @@
 import React from "react";
 import vite from "vite";
 
-function Dice(){
+function Dice() {
     let GAB = 5;
-    let mStr= 2;
-    let mDex=1;
+    let mStr = 2;
+    let mDex = 1;
 
-        function rangeAttack(){
+    function rangeAttack() {
         const rangeAT = GAB + mDex;
         return rangeAT;
-        }
+    }
 
-        function meeleAttack(){
+    function meeleAttack() {
         const meeleAt = GAB + mStr;
         return meeleAt;
-        }
-    
-        const attackBonusR = rangeAttack();
-        console.log("Range Attack Bonus:", attackBonusR);
+    }
 
-        const attackBonusM = meeleAttack();
-        console.log("Meele Attack Bonus:", attackBonusM);
+    const attackBonusR = rangeAttack();
+    console.log("Range Attack Bonus:", attackBonusR);
 
-        function D20(min = 1,max = 20){
+    const attackBonusM = meeleAttack();
+    console.log("Meele Attack Bonus:", attackBonusM);
+
+    function D20(min = 1, max = 20) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
+    }
+
+    function D12(min = 1, max = 12) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function D10(min = 1, max = 10) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function D8(min = 1, max = 8) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function D6(min = 1, max = 6) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function D4(min = 1, max = 4) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
 
     const DiceRoll20 = D20();
-    console.log("Würfel einen D20:",DiceRoll20);
+    console.log("Würfel einen D20:", DiceRoll20);
 
-    function EndAttackM(){
+    function EndAttackM() {
         const NA = meeleAttack() + D20();
         return NA;
     }
@@ -37,12 +58,12 @@ function Dice(){
 
     console.log("Angriff im Nahkampf:", NahAngriff)
 
-    function EndAttackR(){
+    function EndAttackR() {
         const FA = rangeAttack() + D20();
         return FA;
     }
     const FerAngriff = EndAttackR();
     console.log("Angriff im Fernkampf:", FerAngriff)
-    }
+}
 
 export default Dice;
