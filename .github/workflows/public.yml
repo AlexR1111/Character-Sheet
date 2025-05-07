@@ -17,7 +17,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/AlexR1111/publish-packages/game
+          images: ghcr.io/AlexR1111/publish-packages/pathfinder
           tags: type=sha
         
       - name: Login to GHCR
